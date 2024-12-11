@@ -11,7 +11,7 @@ const SplashScreen = () => {
   };
 
   return (
-    <div className="m-auto p-0 relative overflow-hidden ">
+    <div className="m-auto p-0 relative overflow-hidden">
       <div className="bg-[url('/assets/hero-bg.jpg')] bg-cover  bg-center md:bg-repeat bg-no-repeat h-screen w-full pt-40 ">
         {/* Logo image */}
         <div className="w-24 rounded-full border-2 border-primary-600 mx-auto">

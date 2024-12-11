@@ -161,7 +161,7 @@ const ForgotPassword = () => {
         onSubmit={handlePasswordReset}
         className="sm:5/6 md:w-4/6 lg:w-1/3 h-screen m-auto p-4"
       >
-        <h1 className="text-center text-3xl font-bold">Reset Password</h1>
+        <h1 className="text-center text-3xl font-bold">Reset Password.</h1>
 
         {/* Email Input */}
         <div className="mt-5">
