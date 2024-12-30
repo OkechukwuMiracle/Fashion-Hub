@@ -9,4 +9,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+  
+    .scroll  {
+      overflow-y: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      -webkit-overflow-scrolling: none;
+    }
+ 
 }

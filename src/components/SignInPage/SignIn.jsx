@@ -21,7 +21,7 @@ const SignIn = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User Logged In Successfully");
-      window.location.href = "/profile"
+      window.location.href = "/Dashboard"
       toast.success("User Logged In Successfully!!", {
         position: "top-center",
         autoClose: 5000,

@@ -12,7 +12,8 @@ export default {
       colors: {
         primary: '#EFC8B121',
         secondary: '#514644',
-        neutral: '#EFC8B1C2'
+        neutral: '#EFC8B1C2',
+        darkgold: '#F0A376',
       }
     },
   },
