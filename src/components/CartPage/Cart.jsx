@@ -30,7 +30,7 @@ const Cart = ({ cart, removeFromCart }) => {
                   className="w-full max-h-96 object-cover rounded-md "
                 />
               </div>
-              <div className="absolute top-64 left-9  md:left-12 lg:left-20 bg-gradient-to-b from-neutral to-darkgold p-6 py-4 rounded-md flex justify-between w-4/5">
+              <div className="absolute top-56 md:top-64 left-9  md:left-12 lg:left-20 bg-gradient-to-b from-neutral to-darkgold p-6 py-4 rounded-md flex justify-between w-4/5">
                 <p className="font-bold text-1x">{item.name}</p>
                 <div className="">
                   <p className="font-bold">Price</p>
