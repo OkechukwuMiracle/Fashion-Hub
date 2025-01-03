@@ -64,6 +64,9 @@ const DashBoard = ({ setCart }) => {
     { id: 4, name: "Machine 4", price: 20000, image: Machine7 },
     { id: 5, name: "Machine 6", price: 22000, image: Machine4 },
     { id: 6, name: "Machine 7", price: 24000, image: Machine6 },
+    { id: 1, name: "Machine 4", price: 20000, image: Machine4 },
+    { id: 2, name: "Machine 6", price: 22000, image: Machine6 },
+    { id: 3, name: "Machine 7", price: 24000, image: Machine7 },
   ];
 
   // Function to handle adding an item to the cart
@@ -167,35 +170,35 @@ const DashBoard = ({ setCart }) => {
 
       <div className="scroll overflow-x-auto whitespace-nowrap scrollabar-hide flex gap-5 mt-5 px-8 h-1/5">
         <div className="inline-flex gap-5">
-          <div className=" w-4/12 h-5/6 flex-shrink-0">
+          <div className="w-2/4 md:w-4/12 h-5/6 flex-shrink-0">
             <img
               src={Machine1}
               alt="Machine"
               className="w-full rounded-3xl h-full object-cover"
             />
           </div>
-          <div className="w-4/12 h-5/6 flex-shrink-0">
+          <div className="w-2/4 md:w-4/12 h-5/6 flex-shrink-0">
             <img
               src={Machine2}
               alt="Machine"
               className="w-full rounded-3xl h-full object-cover"
             />
           </div>
-          <div className="w-4/12 h-5/6  flex-shrink-0">
+          <div className="w-2/4 md:w-4/12 h-5/6  flex-shrink-0">
             <img
               src={Machine1}
               alt="Machine"
-              className="w-full h-full  rounded-3xl object-cover"
+              className="w-full h-full rounded-3xl object-cover"
             />
           </div>
-          <div className="w-4/12 h-5/6  flex-shrink-0">
+          <div className="w-2/4 md:w-4/12 h-5/6  flex-shrink-0">
             <img
               src={Machine2}
               alt="Machine"
               className="w-full h-full  rounded-3xl object-cover"
             />
           </div>
-          <div className=" w-4/12 h-5/6 flex-shrink-0">
+          <div className="w-2/4 md:w-4/12 h-5/6 flex-shrink-0">
             <img
               src={Machine1}
               alt="Machine"
@@ -243,7 +246,7 @@ const DashBoard = ({ setCart }) => {
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-full object-cover rounded-lg"
+                className="w-full object-cover rounded-xl"
               />
               <div className="absolute bottom-0 flex justify-between bg-secondary w-full p-3 rounded-b-2xl">
                 <p className="text-white font-bold">${item.price / 1000}k</p>

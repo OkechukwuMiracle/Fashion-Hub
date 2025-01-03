@@ -1,4 +1,3 @@
-// import React from 'react'
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
@@ -33,7 +32,7 @@ const Checkout = ({ cart }) => {
   };
 
   return (
-    <div className="bg-primary w-screen h-screen relative">
+    <div className="relative">
       <div className="flex items-center md:w-3/5 m-auto pt-6 pb-6 px-2 gap-10 border-b-2 border-b-neutral">
         <IoIosArrowBack
           className="text-2xl cursor-pointer"

@@ -1,4 +1,3 @@
-// import React from 'react'
 import { TiDelete } from "react-icons/ti";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +6,7 @@ const Cart = ({ cart, removeFromCart }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-primary h-screen text-black relative">
+    <div className=" text-black relative">
       <div className="flex items-center md:w-3/5 m-auto pt-6 pb-6 px-2 gap-10 border-b-2 border-b-neutral">
         <IoIosArrowBack
           className="text-2xl cursor-pointer"
@@ -31,7 +30,7 @@ const Cart = ({ cart, removeFromCart }) => {
                   className="w-full max-h-96 object-cover rounded-md "
                 />
               </div>
-              <div className="absolute bottom-12 left-9  md:left-12 lg:left-20 bg-gradient-to-b from-neutral to-darkgold p-6 py-4 rounded-md flex justify-between w-4/5">
+              <div className="absolute top-64 left-9  md:left-12 lg:left-20 bg-gradient-to-b from-neutral to-darkgold p-6 py-4 rounded-md flex justify-between w-4/5">
                 <p className="font-bold text-1x">{item.name}</p>
                 <div className="">
                   <p className="font-bold">Price</p>
@@ -46,10 +45,9 @@ const Cart = ({ cart, removeFromCart }) => {
                   </div>
                 </div>
               </div>
-            </li>
-          ))}
+            
           <div>
-            <div className="px-5 py-2 text-lg bg-secondary rounded-2xl w-1/2 md:w-1/2 text-center">
+            <div className="px-5 py-2 mt-5 text-lg bg-secondary rounded-2xl w-1/2 md:w-1/4 text-center">
               <p className="text-white font-bold">Features</p>
             </div>
             <li className="list-disc ml-5 font-bold pt-1">
@@ -74,7 +72,10 @@ const Cart = ({ cart, removeFromCart }) => {
               {" "}
               quidem ab voluptatem tenetur!
             </li>
-            <div className="relative">
+          </div>
+          </li>
+          ))}
+          <div className="relative">
               <input
                 type="text"
                 placeholder="Enter promo code"
@@ -88,7 +89,6 @@ const Cart = ({ cart, removeFromCart }) => {
             >
               Buy now
             </button>
-          </div>
         </ul>
       )}
     </div>

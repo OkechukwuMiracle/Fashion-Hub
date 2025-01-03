@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import SplashScreen from "./components/SplashScreenPage/SplashScreen"
 import SignIn from './components/SignInPage/SignIn'
@@ -14,10 +13,6 @@ import { useState } from 'react'
 import Checkout from './components/CheckoutPage/Checkout'
 import Payment from './components/PaymentPage/Payment'
 import Location  from './components/GoogleMap/Location'
-// import Setting from './components/SettingPage/Setting'
-// import ChangePassword from './components/ChangePasswordPage/ChangePassword'
-
-
 
 
 const App = () => {
@@ -44,9 +39,6 @@ const App = () => {
       <Route path='/Checkout' element={<Checkout cart={cart} removeFromCart={removeFromCart}/>} />
       <Route path='/Payment' element={<Payment />} />
       <Route path='/Location' element={<Location />} />
-      
-      {/* <Route path='/Setting' element={<Setting />} /> */}
-      {/* <Route path="/ChangePassword" element={<ChangePassword />} /> */}
     </Routes>
     <ToastContainer/>
     </div>

@@ -1,4 +1,3 @@
-// import React from "react"
 import { IoIosArrowBack } from "react-icons/io";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -28,7 +27,7 @@ const Payment = () => {
     },
     publicKey,
     text: "Pay Now",
-    onSuccess: () => alert("Success🎉!!"),
+    onSuccess: () =>{navigate("/dashBoard"), alert("Success🎉!!")} ,
     onClose: () => alert("Are you sue you want to close?"),
   };
 
@@ -40,7 +39,7 @@ const Payment = () => {
   };
 
   return (
-    <div className="bg-primary w-screen h-screen relative">
+    <div className="relative">
       <div className="flex items-center md:w-3/5 m-auto pt-6 pb-6 px-2 gap-10 border-b-2 border-b-neutral">
         <IoIosArrowBack
           className="text-2xl cursor-pointer"
@@ -64,6 +63,7 @@ const Payment = () => {
           placeholder="Full name"
           className={style.input}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <input
           type="email"
@@ -71,6 +71,7 @@ const Payment = () => {
           placeholder="Email Address"
           className={style.input}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input
           type="number"
@@ -78,6 +79,7 @@ const Payment = () => {
           placeholder="Phone Number"
           className={style.input}
           onChange={(e) => setPhone(e.target.value)}
+          required
         />
         <input
           type="number"
@@ -85,6 +87,7 @@ const Payment = () => {
           placeholder="Amount"
           className={style.input}
           onChange={(e) => setAmount(e.target.value)}
+          required
         />
         <PaystackButton
           type="button"

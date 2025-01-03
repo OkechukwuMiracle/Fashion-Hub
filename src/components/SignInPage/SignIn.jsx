@@ -1,12 +1,15 @@
-// import React from 'react'
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { auth } from "../FirebaseAuth/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { IoIosArrowBack } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(""); // Password visibility
@@ -39,11 +42,15 @@ const SignIn = () => {
     <div className="bg-primary">
       <form
         onSubmit= {handleSubmit}
-        className="sm:5/6 md:w-4/6 lg:w-1/3 h-screen m-auto p-4 "
+        className="sm:5/6 md:w-4/6 lg:w-1/3 h-screen m-auto p-4 focus:outline-none"
       >
-        <h1 className="text-center text-3xl font-bold">
-          Sign into your account.
-        </h1>
+        <div className="flex items-center  m-auto pt-6 pb-6 px-2 gap-10 border-b-2 border-b-neutral">
+        <IoIosArrowBack
+          className="text-2xl cursor-pointer"
+          onClick={() => navigate("/SignUp")}
+        />
+        <p className="font-bold text-2xl text-secondary ">Sign into your account.</p>
+      </div>
 
         {/* Email */}
         <div className="mt-5">

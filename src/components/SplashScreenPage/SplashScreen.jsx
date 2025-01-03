@@ -1,5 +1,3 @@
-// import React from 'react'
-// import HeroBg from '../../assets/hero-bg.jpg'
 import Logo from "../../assets/logo.jpg";
 import { useNavigate } from "react-router-dom";
 import WhatsappIcon from "../WhatsappLink/WhatsappIcon";

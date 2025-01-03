@@ -1,4 +1,3 @@
-// import React from 'react'
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { auth, db } from "../FirebaseAuth/firebase";
@@ -6,8 +5,12 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { setDoc, doc } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { IoIosArrowBack } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const [fname, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -54,14 +57,18 @@ const SignUp = () => {
   };
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary pb-8">
       <form
         onSubmit={handleRegister}
-        className="sm:5/6 md:w-4/6 lg:w-1/3 h-screen m-auto p-4 "
+        className="sm:5/6 md:w-4/6 lg:w-1/3 h-screen m-auto p-4 focus:outline-none"
       >
-        <h1 className="text-center text-3xl font-bold">
-          Create your free account.
-        </h1>
+        <div className="flex items-center  m-auto pt-6 pb-6 px-2 gap-10 border-b-2 border-b-neutral">
+        <IoIosArrowBack
+          className="text-2xl cursor-pointer"
+          onClick={() => navigate("/")}
+        />
+        <p className="font-bold text-2xl text-secondary ">Create your free account.</p>
+      </div>
 
         {/* Name */}
         <div className="mt-7">
