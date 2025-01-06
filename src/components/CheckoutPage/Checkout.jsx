@@ -42,7 +42,7 @@ const Checkout = ({ cart }) => {
       </div>
 
       {cart.length === 0 ? (
-        <p className="text-center mt-10">Your cart is empty.</p>
+        <p className="text-center mt-10 font-bold text-2xl">Your cart is empty.</p>
       ) : (
         <ul className="mt-6 md:w-3/5 m-auto text-black rounded-lg p-2 relative">
           {cart.map((item, index) => (
@@ -54,7 +54,7 @@ const Checkout = ({ cart }) => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-max-h-96 object-cover rounded-md "
+                  className="max-w-36 md:max-w-40 object-cover rounded-md "
                 />
                 <div className="">
                   <p className="font-bold text-black text-base md:text-xl">

@@ -15,7 +15,7 @@ const Cart = ({ cart, removeFromCart }) => {
         <p className="font-bold text-3xl text-secondary ">Your Cart</p>
       </div>
       {cart.length === 0 ? (
-        <p className="text-center mt-10">Your cart is empty.</p>
+        <p className="text-center mt-10 font-bold text-2xl">Your cart is empty.</p>
       ) : (
         <ul className="mt-6 md:w-3/5 m-auto text-black rounded-lg p-4 relative">
           {cart.map((item, index) => (
@@ -38,7 +38,7 @@ const Cart = ({ cart, removeFromCart }) => {
                     <p className="font-bold">${item.price / 1}k</p>
                     <button
                       onClick={() => removeFromCart(item.id)}
-                      className="bg-red-500 text-white px-1 py-1 rounded-full mt-2 font-bold"
+                      className="bg-red-500 text-white px-1 py-1 rounded mt-2 font-bold"
                     >
                       <TiDelete />
                     </button>
