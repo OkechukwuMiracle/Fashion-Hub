@@ -358,12 +358,14 @@ const DashBoard = ({ setCart }) => {
               {" "}
               Looking to <br /> partner with us?
             </p>
-            <button
-              onClick={() => navigate("https://wa.me/message/KLETFAPCU54UG1")}
+            <a
+              href="https://wa.me/message/KLETFAPCU54UG1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-neutral pt-3 cursor-pointer"
             >
               Click here
-            </button>
+            </a>
           </div>
           <div>
             <p className="font-bold">Or</p>
@@ -372,12 +374,14 @@ const DashBoard = ({ setCart }) => {
             <p className="font-bold">
               Are you a <br /> professional rider?
             </p>
-            <button
-              onClick={() => navigate("https://wa.me/message/KLETFAPCU54UG1")}
+            <a
+              href="https://wa.me/message/KLETFAPCU54UG1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-neutral pt-3 cursor-pointer"
             >
               Click here
-            </button>
+            </a>
           </div>
         </div>
       </div>
